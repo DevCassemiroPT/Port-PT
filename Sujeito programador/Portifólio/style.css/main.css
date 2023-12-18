@@ -1,0 +1,29 @@
+.main {
+    align-items: center;
+    background-color: #cad2d9;
+    background-image: url("/Portifólio/Imagens/images/programador.png");
+    display: flex;
+    height: calc(112vh - 80px);
+    padding-left:12%;
+    width: 100%;
+}
+.main h1 {
+    color: #FFFFFF;
+    font-size: 43px;
+}
+.main p {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-style: italic;
+    padding-bottom: 35px;
+    padding-top: 10px;
+    transition: 0.9s;  
+}
+.main p:hover {
+    transform: scale(1.1);
+}
+  .botao:hover {
+    background: #3577b4;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+    transform: scale(1.1)  
+}

@@ -1,0 +1,27 @@
+.about {
+    align-items: center;
+    background-color: #ffffff;  
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+.about div {
+    max-width: 60%;
+    padding-right: 40px;
+}
+.about img {
+    border-radius: 10%;
+    width: 30%;
+}
+.about h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.about p {
+    font-size: 20px;
+}
+

@@ -1,0 +1,17 @@
+.infobox {
+    align-items: center;
+    background-color: #FFF;
+    border: 1px solid rgb(236,234,234);
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    margin: 10px auto 0;  
+    height: 60px;
+}
+.infobox p {
+    user-select: none;
+}
+.infobox p a {
+    font-weight: bold;
+    user-select: none; 
+}

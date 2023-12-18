@@ -1,0 +1,21 @@
+.rodape {
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #13101092, #000000);
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 75px;
+    padding: 45px 05%;
+    width: 100%;
+}
+
+.rodape a {
+   color: #ffffff;
+   font-size: 21px;
+   text-decoration: none;
+}
+
+.rodape p {
+    color: #ffffff;
+    font-size: 20px;
+}

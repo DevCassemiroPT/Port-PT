@@ -1,0 +1,15 @@
+.obter-app {
+   margin-top: 20px;
+   text-align: center;
+}
+
+.app-botoes {
+    display: flex;
+    margin: 16px 7%;
+    
+}
+
+.app-botoes img {
+    height: 45px;
+    padding: 0 3px;
+}

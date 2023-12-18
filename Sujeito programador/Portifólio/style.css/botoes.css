@@ -1,0 +1,35 @@
+.botao-projetos {
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-size: 21px;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 20px 24px;
+  text-decoration: none;
+}
+.botao-projetos:hover {
+  outline: 0;
+  text-decoration-line: none;
+  transform: scale(1.1);
+  transition: 0.9s;
+}
+
+
+.botoes-links {
+  padding: 15px 0;
+
+}
+
+
+   
+   
+  
+   
+

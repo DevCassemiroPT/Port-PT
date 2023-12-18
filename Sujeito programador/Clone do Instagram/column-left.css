@@ -1,0 +1,8 @@
+.left {
+    background-image: url("./assets/main-foto.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+}
