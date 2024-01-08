@@ -1,40 +1,40 @@
-//Switch
 /*
-function pedir(){
-    var valor = prompt("Digite o valor de 1 a 4");
 
-    switch(Number(valor)){
-        case 1:
-            alert("Você escolheu 1 = Suco");
-        break;
-        case 2:
-            alert("Você escolheu 2 = Água");
-        break;
-        case 3:
-            alert("Você escolheu 3 = Leite");
-        break;
-        case 4:
-            alert("Você escolheu 4 = Refrigerante");
-        break;
-        default:
-            alert("Escolha uma opção entre 1 e 4.")
-    }
-}
+Abaixo de 17 Muito abaixo do peso
+Entre 17 e 18,46 Abaixo do peso
+Entre 18,5 e 24,99 Peso normal
+Entre 25 e 29,99 Acimado peso
+
+Calculo do IMC: peso /(altura*altura)
+
 */
 
-var nome = "Lipe";
+var altura;
+var imc;
+var peso;
+var resultado;
 
-if(nome === "Igor"){
-    alert("Bem vindo Igor");
-}else{
-    prompt("Você não é o Igor ?");
+function calcular (event){
+    event.preventDefault();
+    
+    peso = document.getElementById('peso').value;
+    altura = document.getElementById('altura').value;
+    imc = peso / (altura * altura);
+    
+    resultado = document.getElementById('resultado');
+
+    if(imc < 17){
+        resultado.innerHTML = '<br/> Seu resultado do seu IMC é: ' + imc.toFixed(2) + '<br/> Cuidado, seu peso está muito abaixo do ideal!';
+    } else if(imc > 17 && imc < 18.49){
+        resultado.innerHTML = '<br/> Seu resultado do seu IMC é: ' + imc.toFixed(2) + '<br/> Atenção, abaixo do peso recomendado!';
+    } else if (imc > 18.5 && imc < 24.99){
+        resultado.innerHTML = '<br/> Seu resultado do seu IMC é: ' + imc.toFixed(2) + '<br/> Parabéns, você está com o peso ideal!';
+    } else if (imc > 25 && imc < 29.99) {
+        resultado.innerHTML = '<br/> Seu resultado do seu IMC é: ' + imc.toFixed(2) + '<br/> Cuidado, muito cuidado, seu peso está acima do ideal. Procure um especialista!!!'
+    } else if (imc > 30){
+        resultado.innerHTML = '<br/> Seu resultado do seu IMC é: ' + imc.toFixed(2) + '<br/> Cuidado obesidade, procure um médico!';
+    }
+
+    document.getElementById('peso').value = '';
+    document.getElementById('altura').value = '';
 }
-// === é tutilizado para realizar a condição e comprar o tipo, se é número ou string.
-
-
-//Operador ternário
-var nome = "Alexandre";
-
-nome === "Alexandre" ? console.log("Olá Alexandre") : console.log("Você não é o Alexandre. Faça o login e tente novamente. ");
-// ? é utilizado como IF.
-// : é utilizado como ELSE

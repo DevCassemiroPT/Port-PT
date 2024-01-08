@@ -6,15 +6,21 @@
     <title>Iniciando o JS</title>
 </head>
 <body>
-   
-    <ul>
-        <li>1- Suco</li>
-        <li>2- Água</li>
-        <li>3- Leite</li>
-        <li>4- Refrigerante</li>
-    </ul>
+    
+    <form onsubmit="return calcular(event)">
+        <label> Digte seu peso (Kg): </label><br>
+        <input type="text" name="peso" id="peso" placeholder="Exemplo 80"><br><br>
 
-    <button onclick="pedir()">Pedir</button>
+        <label> Digte sua altura: </label><br>
+        <input type="text" name="altura" id="altura" placeholder="Exemplo 1.82"><br><br>
+
+        <input type="submit" value="Calcular IMC">
+
+    </form>
+
+    <div id="resultado">
+        
+    </div>
 
     <script src="script.js"></script>
 </body>
